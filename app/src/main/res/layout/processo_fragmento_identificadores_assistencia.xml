@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvAssistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="0dp"
+        card_view:cardBackgroundColor="#fbfbfb"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:contentPadding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assistência"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#777777"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+
+            <RelativeLayout
+                android:id="@+id/rlProcessoCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:id="@+id/tvProcessoCampoCodigo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Companhia"
+                    android:textColor="#5555aa"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tvProcessoValorCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tvProcessoCampoCodigo"
+                    android:layout_toEndOf="@id/tvProcessoCampoCodigo"
+                    android:layout_marginStart="3dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#456645"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlProcessoArtigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+                <TextView
+                    android:id="@+id/tvProcessoCampoArtigo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Artigo"
+                    android:textColor="#5555aa"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+                <TextView
+                    android:id="@+id/tvProcessoValorArtigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tvProcessoCampoArtigo"
+                    android:layout_toEndOf="@id/tvProcessoCampoArtigo"
+                    android:layout_marginStart="3dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#456645"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlProcessoContactoAssistencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+                <TextView
+                    android:id="@+id/tvProcessoCampoContactoAssistencia"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Contacto"
+                    android:textColor="#5555aa"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tvProcessoValorContactoAssistencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tvProcessoCampoContactoAssistencia"
+                    android:layout_toEndOf="@id/tvProcessoCampoContactoAssistencia"
+                    android:layout_marginStart="3dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#456645"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

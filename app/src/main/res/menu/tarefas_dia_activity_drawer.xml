@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tarefas_dia"
+            android:icon="@mipmap/ic_action_home"
+            android:title="Listar Tarefas" />
+        <item
+            android:id="@+id/nav_picaponto"
+            android:icon="@mipmap/ic_action_users"
+            android:title="Pica Ponto" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Opções">
+            <menu>
+                <item
+                    android:id="@+id/nav_subir_dados"
+                    android:icon="@mipmap/ic_action_upload"
+                    android:title="Subir Dados" />
+                <item
+                    android:id="@+id/nav_sair_aplicacao"
+                    android:icon="@mipmap/ic_action_exit"
+                    android:title="Sair" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

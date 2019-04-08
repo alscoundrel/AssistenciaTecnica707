@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tarefa"
+            android:icon="@mipmap/ic_action_list_2"
+            android:title="Tarefa" />
+        <item
+            android:id="@+id/nav_identificadores"
+            android:icon="@mipmap/ic_action_users"
+            android:title="Identificadores" />
+        <item
+            android:id="@+id/nav_trabalhos"
+            android:icon="@mipmap/ic_action_pin"
+            android:title="Trabalhos" />
+        <item
+            android:id="@+id/nav_fotografias"
+            android:icon="@mipmap/ic_action_picture"
+            android:title="Fotografias" />
+        <item
+            android:id="@+id/nav_documentos"
+            android:icon="@mipmap/ic_action_document"
+            android:title="Documentos" />
+        <item
+            android:id="@+id/nav_fotografar"
+            android:icon="@mipmap/ic_action_camera"
+            android:title="Fotografar" />
+        <item
+            android:id="@+id/nav_localizacao"
+            android:icon="@mipmap/ic_action_location"
+            android:title="Localização Obra" />
+        <item
+            android:id="@+id/nav_mapa"
+            android:icon="@mipmap/ic_action_map"
+            android:title="Mapa Obra"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_evolucao"
+            android:icon="@mipmap/ic_action_send"
+            android:title="Evolução"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_levantamentos"
+            android:icon="@mipmap/ic_action_book"
+            android:title="Levantamentos"
+            android:visible="false"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Opções">
+            <menu>
+                <item
+                    android:id="@+id/nav_voltar_tarefas"
+                    android:icon="@mipmap/ic_action_undo_yb"
+                    android:title="Voltar menu anterior" />
+                <item
+                    android:id="@+id/nav_sair_aplicacao_processo"
+                    android:icon="@mipmap/ic_action_exit"
+                    android:title="Sair" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

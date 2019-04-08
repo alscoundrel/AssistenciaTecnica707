@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fases_processo">
+        <item></item>
+        <item>Agravamento de Danos</item>
+        <item>Execução</item>
+        <item>Entrega Equipamento</item>
+        <item>Levantamento</item>
+        <item>Obra Concluída</item>
+        <item>Pesquisa</item>
+    </string-array>
+    <!-- levantamentos -->
+    <string-array name="estados_edificio">
+        <item></item>
+        <item>Péssimo</item>
+        <item>Mau</item>
+        <item>Médio</item>
+        <item>Bom</item>
+        <item>Excelente</item>
+    </string-array>
+    <string-array name="canalizacao">
+        <item></item>
+        <item>COBRE</item>
+        <item>MULTICAMADA</item>
+        <item>PEX</item>
+        <item>PEXGOL</item>
+        <item>PPR</item>
+        <item>PVC</item>
+    </string-array>
+</resources>

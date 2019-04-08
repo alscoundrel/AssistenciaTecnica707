@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RefreshTarefasDia2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="3dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/llSemtarefas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:id="@+id/pbFicheirosReceber"
+            android:visibility="visible"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:maxHeight="20dip"
+            android:minHeight="20dip"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/greenprogress"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDadoAReceber"
+            android:text="A baixar ficheiros..."
+            android:visibility="visible"
+            android:textSize="13sp"
+            android:paddingStart="12sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listaTarefasDia"
+            android:name="com.dlsra.assistenciatecnica707.TarefasDiaFragmentoTarefas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:context="com.dlsra.assistenciatecnica707.TarefasDiaFragmentoTarefas"
+            tools:listitem="@layout/tarefas_dia_fragmento_tarefas" />
+
+        <TextView
+            android:id="@+id/tvSemtarefas"
+            style="@android:style/Widget.DeviceDefault.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sem tarefas"
+            android:textColor="#636363"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

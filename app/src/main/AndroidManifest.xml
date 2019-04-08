@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dlsra.assistenciatecnica707">
+
+    <!-- Permissão necessária para acessar a internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Permissao para acesso memoria interna -->
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <!-- Permissao para acesso memoria externa -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Permissao para acesso a localizacao do aparelho -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".InicioEntrar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InicioAcesso"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_inicio_acesso"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TarefasDia"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_tarefas_dia"
+            android:theme="@style/AppTheme.JanelaTarefas" />
+        <activity
+            android:name=".InicioEndereco"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProcessoJanela"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_processo_janela"
+            android:theme="@style/AppTheme.JanelaProcessos">
+        </activity>
+        <activity
+            android:name=".ProcessoFragmentoFotografiasFullScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProcessoFragmentoDocumentosVerTXT"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name=".ProcessoFragmentoDocumentosVerHTML" />
+        <activity
+            android:name=".SubirDados"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_subir_dados"
+            android:theme="@style/AppTheme.JanelaSubirDados"></activity>
+    </application>
+
+</manifest>

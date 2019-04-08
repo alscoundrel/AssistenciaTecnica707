@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sd_fotografias"
+            android:icon="@mipmap/ic_action_fotografias"
+            android:title="Fotografias" />
+        <item
+            android:id="@+id/nav_sd_picaponto"
+            android:icon="@mipmap/ic_action_picaponto"
+            android:title="Pica-Pontos" />
+        <item
+            android:id="@+id/nav_sd_coordenadas"
+            android:icon="@mipmap/ic_action_localizacao"
+            android:title="Coordenadas Obras" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Opções">
+            <menu>
+                <item
+                    android:id="@+id/nav_sd_voltar_tarefas"
+                    android:icon="@mipmap/ic_action_undo_yb"
+                    android:title="Voltar menu anterior" />
+                <item
+                    android:id="@+id/nav_sd_sair_aplicacao_processo"
+                    android:icon="@mipmap/ic_action_exit"
+                    android:title="Sair" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

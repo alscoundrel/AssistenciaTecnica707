@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dlsra.assistenciatecnica707.ProcessoFragmentoFotografias">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/llFotografiasSemFotos">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sem fotografias..."
+            android:textSize="18sp"
+            android:textColor="#999"
+            android:visibility="visible"
+            android:paddingTop="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/llFotografiasComFotos">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvFotografias"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:divider="#b5b5b5"
+            android:dividerHeight="0dp"
+            android:paddingTop="40dp"
+            android:listSelector="@drawable/list_selector_fotos"
+            />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/tarefas_estilo"
+    >
+    <!-- A CardView -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        card_view:cardBackgroundColor="#fdfdfd"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:id="@+id/tvHoraListaTarefas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:foregroundGravity="top"
+                android:text="Hora"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="?attr/editTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProcessoListaTarefas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/tvHoraListaTarefas"
+                android:text="Processo"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvLocalidadeListaTarefas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tvProcessoListaTarefas"
+                android:layout_marginStart="12dp"
+                android:text="Localidade"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="#999900"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvNotaListaTarefas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvLocalidadeListaTarefas"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#646464"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

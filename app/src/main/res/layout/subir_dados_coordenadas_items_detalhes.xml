@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        card_view:cardBackgroundColor="#fdfdfd"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/estadoDadoEnviar"
+                android:layout_width="@dimen/caixaLarguraInfoEnviarDado"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true">
+
+                <CheckBox
+                    android:id="@+id/cbParaEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="1dp"
+                    android:background="@android:drawable/screen_background_light_transparent" />
+
+                <ImageView
+                    android:id="@+id/ivOkEnviado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/cbParaEnviar"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:src="@mipmap/ic_action_tick" />
+
+                <TextView
+                    android:id="@+id/itemPorEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/ivOkEnviado"
+                    android:layout_marginTop="4dp"
+                    android:paddingBottom="2px"
+                    android:paddingRight="4px"
+                    android:text="Por Enviar"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/txtPorEnviarFotografia" />
+
+                <Button
+                    android:id="@+id/btEliminarDado"
+                    style="@android:style/DeviceDefault.Light.ButtonBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/itemPorEnviar"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="Eliminar"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/btEliminarEnviarDado"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dadosCoordenadasEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/itemProcessoCoordenadas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="2dp"
+                    android:text="8888 AAAA/8888"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/txtPorEnviarProcesso"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/itemGPSCoordenadas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemProcessoCoordenadas"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="1dp"
+                    android:text="88.888888:88.888888"
+                    android:textColor="#040404"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/txtPorEnviarTipologia"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/itemDataCoordenadasr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="88/88/8888"
+                    android:textAlignment="viewStart"
+                    android:textColor="#343434"
+                    android:textSize="@dimen/txtPorEnviarDescricao"
+                    android:typeface="sans"
+                    android:layout_below="@+id/itemGPSCoordenadas" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

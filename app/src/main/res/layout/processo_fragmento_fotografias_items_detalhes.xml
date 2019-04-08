@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    >
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivFotografia"
+            android:layout_alignParentStart="false"
+            android:adjustViewBounds="true"
+            android:maxHeight="72dp"
+            android:maxWidth="72dp"
+            android:minWidth="70dp"
+            />
+    </LinearLayout>
+
+    <TextView android:id="@+id/itemTipologiaDocumento"
+        android:text="Levantamento 8888-88-88"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_alignTop="@+id/thumbnail"
+        android:gravity="center_vertical"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="3dp" />
+
+    <TextView android:id="@+id/itemDescricaoFoto"
+        android:textSize="12sp"
+        android:textColor="#343434"
+        android:typeface="sans"
+        android:text="Descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_below="@+id/itemTipologiaDocumento"
+        android:textAlignment="viewStart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Por Enviar"
+        android:id="@+id/itemPorEnviar"
+        android:textSize="8dp"
+        android:layout_alignEnd="@+id/thumbnail"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:paddingRight="4px"
+        android:paddingBottom="2px"
+        android:textColor="#ffe100" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemIdFotografia"
+        android:visibility="gone" />
+</RelativeLayout>

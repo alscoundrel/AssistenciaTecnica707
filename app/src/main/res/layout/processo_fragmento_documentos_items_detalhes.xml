@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    >
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:layout_width="92px"
+            android:layout_height="92px"
+            android:id="@+id/ivIcon"
+            android:layout_alignParentStart="false"
+            android:adjustViewBounds="true"
+            android:maxHeight="72dp"
+            android:maxWidth="72dp"
+            android:minWidth="70dp"
+            />
+    </LinearLayout>
+
+    <TextView android:id="@+id/itemTipologiaDocumento"
+        android:text="Levantamento 8888-88-88"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_alignTop="@+id/thumbnail"
+        android:gravity="center_vertical"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="2dp" />
+
+    <TextView android:id="@+id/itemNomeDocumento"
+        android:textSize="11sp"
+        android:textColor="#252525"
+        android:typeface="sans"
+        android:text="Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_below="@+id/itemTipologiaDocumento"
+        android:textAlignment="viewStart" />
+
+    <TextView android:id="@+id/itemDescricaoDocumento"
+        android:textSize="10sp"
+        android:textColor="#343434"
+        android:typeface="sans"
+        android:text="Descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_below="@+id/itemNomeDocumento"
+        android:textAlignment="viewStart" />
+</RelativeLayout>

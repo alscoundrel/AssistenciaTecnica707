@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Assistência Técnica 707</string>
+    <string name="title_activity_inicio_acesso">Acesso</string>
+
+    <!-- String's gerais -->
+    <string name="endereco_electronico">http://dlsra.diz.la</string>
+    <string name="pasta_no_servidor">android_extranet</string>
+    <string name="pasta_input">gestao_processos/inputs</string>
+    <string name="ficheiro_endereco_electronico">endereco_electronico.txt</string>
+    <string name="ficheiro_credenciais_utilizador">numero_utilizador.txt</string>
+    <string name="ficheiro_dados_navegacao">dados_navegacao.xml</string>
+    <string name="pasta_deposito_fotografias">"fotos_tmp"</string>
+
+    <!-- String's da activity credenciais -->
+    <string name="prompt_codigo">Código Pessoal</string>
+    <string name="prompt_contacto">Contacto (Empresa)</string>
+    <string name="action_sign_in">Entrar e registar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="error_invalid_codigo">Código inválido!</string>
+    <string name="error_invalid_contacto">Contacto inválido!</string>
+    <string name="error_incorrect_contacto">Contacto incorrecto!</string>
+    <string name="error_field_required">Dados incorrectos!</string>
+    <string name="permission_rationale">"Contacte um administrador do sistema!"</string>
+    <string name="title_activity_tarefas_dia">Tarefas</string>
+    <string name="tarefas">Tarefas...</string>
+
+    <!-- String's da activity endereco electronico -->
+    <string name="prompt_endereco_electronico">Endereço Electrónico</string>
+    <string name="action_endereco">Registar</string>
+
+    <string name="navigation_drawer_open">Abrir janela de navegação</string>
+    <string name="navigation_drawer_close">Fechar janela de navegação</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_processo_janela">Processo</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_subir_dados">SubirDados</string>
+</resources>
